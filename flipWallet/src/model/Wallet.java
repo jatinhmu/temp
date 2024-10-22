@@ -1,5 +1,7 @@
 package model;
 
+import Utility.BaseUtil;
+
 import java.math.BigDecimal;
 
 public class Wallet {
@@ -7,6 +9,12 @@ public class Wallet {
     private String userName;
     private BigDecimal currBalance;
 
+    public Wallet(String username){
+        walletId = BaseUtil.generateWalletId();
+        userName = username;
+        currBalance = BigDecimal.ZERO;
+
+    }
     public Long getWalletId() {
         return walletId;
     }

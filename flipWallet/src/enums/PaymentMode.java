@@ -1,5 +1,5 @@
 package enums;
 
-public enum PROVIDERS {
+public enum PaymentMode {
     DC,CC,UPI;
 }

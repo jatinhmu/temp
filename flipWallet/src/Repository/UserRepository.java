@@ -1,15 +1,15 @@
-package dao;
+package Repository;
 
 import model.User;
-import statics.IdGenerator;
+import Utility.BaseUtil;
 
 import java.util.HashMap;
 
-public class UserDao {
+public class UserRepository {
 
     private final HashMap<String, User> registeredUser;
 
-    public UserDao(){
+    public UserRepository(){
         registeredUser = new HashMap<>();
     }
 
@@ -20,7 +20,7 @@ public class UserDao {
         }
         User user = new User();
         user.setUserName(userName);
-        user.setUserId(IdGenerator.generateId());
+        user.setUserId(BaseUtil.generateUserId());
         registeredUser.put(userName, user);
         return user;
     }

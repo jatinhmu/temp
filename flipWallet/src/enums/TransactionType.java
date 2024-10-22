@@ -1,5 +1,5 @@
 package enums;
 
-public enum TRANSACTION_TYPE {
+public enum TransactionType {
     SEND, RECEIVE;
 }

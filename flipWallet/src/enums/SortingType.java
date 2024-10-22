@@ -1,5 +1,5 @@
 package enums;
 
-public enum SORTING_TYPE {
+public enum SortingType {
     AMOUNT, TIME;
 }

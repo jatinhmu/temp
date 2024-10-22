@@ -1,6 +1,6 @@
 package model;
 
-import enums.TRANSACTION_TYPE;
+import enums.TransactionType;
 
 import java.math.BigDecimal;
 
@@ -10,17 +10,17 @@ public class Transaction {
     private String recipientName;
     private Long transactionTimeStamp;
     private BigDecimal amount;
-    private TRANSACTION_TYPE transactionType;
+    private TransactionType transactionType;
 
     public String getSenderName() {
         return senderName;
     }
 
-    public TRANSACTION_TYPE getTransactionType() {
+    public TransactionType getTransactionType() {
         return transactionType;
     }
 
-    public void setTransactionType(TRANSACTION_TYPE transactionType) {
+    public void setTransactionType(TransactionType transactionType) {
         this.transactionType = transactionType;
     }
 
